@@ -24,3 +24,4 @@ services:
         sync: false
       - key: ADMIN_SECRET_KEY
         value: habrenoir_admin_sec_2026
+
