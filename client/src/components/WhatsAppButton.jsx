@@ -57,7 +57,7 @@ export const WhatsAppButton = () => {
 
     try {
       sessionStorage.setItem('hbn_wa_position', JSON.stringify({ x: snappedX, y: clampedY, side }));
-    } catch (e) {}
+    } catch (e) { }
 
     setTimeout(() => {
       setIsSnapping(false);
@@ -250,9 +250,8 @@ export const WhatsAppButton = () => {
       <div className="relative group">
         {/* Floating Tooltip Label (Snaps to opposite side of screen edge) */}
         <div
-          className={`absolute top-1/2 -translate-y-1/2 pointer-events-none transition-all duration-200 hidden sm:flex items-center ${
-            dockedSide === 'left' ? 'left-full ml-3' : 'right-full mr-3'
-          } ${isHovered && !isDragging ? 'opacity-100 translate-x-0' : 'opacity-0 scale-95'}`}
+          className={`absolute top-1/2 -translate-y-1/2 pointer-events-none transition-all duration-200 hidden sm:flex items-center ${dockedSide === 'left' ? 'left-full ml-3' : 'right-full mr-3'
+            } ${isHovered && !isDragging ? 'opacity-100 translate-x-0' : 'opacity-0 scale-95'}`}
         >
           <div className="bg-[#140002]/95 backdrop-blur-md text-[#ECE7DF] border border-[#C5A880]/60 px-3 py-1.5 shadow-[0_4px_16px_rgba(20,0,2,0.4)] whitespace-nowrap">
             <span className="font-sans text-[10px] tracking-[0.16em] uppercase font-semibold text-[#FFFFFF]">
@@ -270,21 +269,18 @@ export const WhatsAppButton = () => {
           onMouseDown={handleMouseDown}
           onTouchStart={handleTouchStart}
           aria-label="Direct WhatsApp Concierge. Drag to move along screen sides."
-          className={`relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full border bg-[#140002]/90 backdrop-blur-md text-[#FFFFFF] shadow-[0_6px_20px_rgba(20,0,2,0.35)] transition-all duration-500 ease-out ${
-            isQuiet
+          className={`relative flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full border bg-[#140002]/90 backdrop-blur-md text-[#FFFFFF] shadow-[0_6px_20px_rgba(20,0,2,0.35)] transition-all duration-500 ease-out ${isQuiet
               ? 'opacity-35 hover:opacity-100 border-[#C5A880]/40 scale-90'
               : 'opacity-100 border-[#C5A880] scale-100'
-          } ${
-            isDragging
+            } ${isDragging
               ? 'cursor-grabbing scale-110 shadow-[0_12px_30px_rgba(20,0,2,0.6)] ring-2 ring-[#C5A880]/50 border-[#C5A880]'
               : 'cursor-grab hover:scale-105 hover:border-[#C5A880]'
-          }`}
+            }`}
         >
           {/* Champagne Gold WhatsApp Vector Icon */}
           <svg
-            className={`w-5 h-5 text-[#C5A880] group-hover:text-[#FFFFFF] transition-colors ${
-              isQuiet ? 'opacity-80' : 'opacity-100'
-            }`}
+            className={`w-5 h-5 text-[#C5A880] group-hover:text-[#FFFFFF] transition-colors ${isQuiet ? 'opacity-80' : 'opacity-100'
+              }`}
             viewBox="0 0 24 24"
             fill="currentColor"
             aria-hidden="true"

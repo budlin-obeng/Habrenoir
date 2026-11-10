@@ -97,7 +97,7 @@ export const CartDrawer = () => {
             </span>
           </div>
           <span className="font-sans text-[9px] tracking-widest uppercase text-[#725B38]">
-            Greater Accra & Nationwide Ghana
+            Nationwide and International
           </span>
         </div>
 
@@ -111,7 +111,7 @@ export const CartDrawer = () => {
                   Your shopping bag is empty
                 </h5>
                 <p className="font-sans text-[13px] text-[#767676] mt-1.5 max-w-[260px] leading-relaxed">
-                  Explore our signature creations handcrafted across our Accra and European ateliers.
+                  Explore our signature creations handcrafted across our various branches.
                 </p>
                 <button
                   onClick={closeDrawer}

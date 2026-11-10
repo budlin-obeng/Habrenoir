@@ -9,10 +9,10 @@ export const Footer = () => {
   return (
     <footer className="bg-[#140002] text-[#ECE7DF] border-t border-[#3D0C15] pt-16 pb-12 font-sans">
       <div className="max-w-[1700px] mx-auto px-4 sm:px-8">
-        
+
         {/* Top Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-16 border-b border-[#3D0C15]">
-          
+
           {/* Brand Column */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-3.5">
@@ -47,20 +47,6 @@ export const Footer = () => {
               <li><Link to="/catalog?category=bags" className="hover:text-[#FFFFFF] transition-colors">Handbags & Clutches</Link></li>
               <li><Link to="/catalog?category=shoes" className="hover:text-[#FFFFFF] transition-colors">Loafers & Dress Shoes</Link></li>
               <li><Link to="/catalog" className="hover:text-[#FFFFFF] transition-colors">All Creations Archive</Link></li>
-            </ul>
-          </div>
-
-          {/* Col 2: Craftsmanship */}
-          <div className="space-y-3">
-            <span className="text-[#C5A880] text-[10px] tracking-[0.24em] uppercase block font-semibold">
-              CRAFTSMANSHIP
-            </span>
-            <ul className="space-y-2 text-[12px] text-[#A89899]">
-              <li><Link to="/atelier" className="hover:text-[#FFFFFF] transition-colors">{t('the_atelier')}</Link></li>
-              <li><Link to="/atelier#brass" className="hover:text-[#FFFFFF] transition-colors">Accra Lost-Wax Brass</Link></li>
-              <li><Link to="/atelier#leather" className="hover:text-[#FFFFFF] transition-colors">Full-Grain Box Calfskin</Link></li>
-              <li><Link to="/atelier#cordwain" className="hover:text-[#FFFFFF] transition-colors">Master Cordwaining</Link></li>
-              <li><Link to="/contact" className="hover:text-[#FFFFFF] transition-colors">Bespoke Orders</Link></li>
             </ul>
           </div>
 

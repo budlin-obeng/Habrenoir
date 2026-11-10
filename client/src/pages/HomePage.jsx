@@ -72,7 +72,7 @@ export const HomePage = () => {
 
   return (
     <main className="w-full bg-[#FFFFFF] pt-14 sm:pt-20">
-      
+
       {/* =========================================================
           1. FULL-BLEED CINEMATIC HERO CAMPAIGN BANNER
          ========================================================= */}
@@ -93,7 +93,7 @@ export const HomePage = () => {
             HABRENOIR
           </h1>
           <p className="font-sans text-[13px] sm:text-[15px] leading-relaxed text-[#FFFFFF]/90 font-light mb-6 max-w-xl">
-            A contemporary dialogue between pure architectural proportion and sculpted box calfskin. Discover the new collection.
+            A contemporary dialogue between Ghanaian architectural elegance and the refined craftsmanship of premium leather. Inspired by Ghana's rich cultural heritage and modern sophistication. Discover the new collection.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-[12px] font-sans tracking-[0.14em] uppercase font-medium">
             <Link
@@ -124,7 +124,7 @@ export const HomePage = () => {
          ========================================================= */}
       <section className="py-16 sm:py-24 px-4 sm:px-10 lg:px-14 bg-[#FFFFFF] border-b border-[#EAE6DF]">
         <div className="max-w-[1700px] mx-auto">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="font-sans text-[11px] uppercase tracking-[0.28em] text-[#C5A880] block mb-2 font-semibold">
               HABRENOIR · ACCRA
@@ -134,7 +134,7 @@ export const HomePage = () => {
             </h2>
             <div className="w-12 h-[1px] bg-[#111111] mx-auto mt-4 mb-3"></div>
             <p className="font-sans text-[13px] text-[#6B7280] font-light max-w-lg mx-auto">
-              Sculptural box calfskin leather goods, Blake-stitched cordwaining, and fine Como silk crepe from our Accra and European ateliers.
+              Sculptural leather craftsmanship, refined Blake-stitched footwear, and luxurious silk fabrics, thoughtfully crafted through the fusion of Ghanaian artistry and European design, from our Accra-based atelier to the world.
             </p>
           </div>
 
@@ -206,7 +206,7 @@ export const HomePage = () => {
          ========================================================= */}
       <section className="w-full bg-[#FFFFFF] border-b border-[#EAE6DF]">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          
+
           {/* Left Portal: WOMEN */}
           <div className="relative h-[65vh] sm:h-[78vh] min-h-[480px] group overflow-hidden border-b md:border-b-0 md:border-r border-[#EAE6DF]">
             <img
