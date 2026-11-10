@@ -93,7 +93,7 @@ export const HomePage = () => {
             HABRENOIR
           </h1>
           <p className="font-sans text-[13px] sm:text-[15px] leading-relaxed text-[#FFFFFF]/90 font-light mb-6 max-w-xl">
-            A contemporary dialogue between Ghanaian architectural elegance and the refined craftsmanship of premium leather. Inspired by Ghana's rich cultural heritage and modern sophistication. Discover the new collection.
+            Ghanaian heritage meets modern luxury. Discover the new collection.
           </p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-[12px] font-sans tracking-[0.14em] uppercase font-medium">
             <Link
