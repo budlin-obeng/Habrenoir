@@ -1,0 +1,53 @@
+@layer base {
+  /* Strict Luxury Architectural Directives:
+     - 0px border radius across ALL containers, cards, buttons, drawers, badges, swatches
+     - 0px box shadows across all elements
+     - Planar architectural layout reminiscent of European flagship flagships
+  */
+  *, *::before, *::after {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  html, body {
+    background-color: #F9F8F6;
+    color: #111111;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'DM Serif Display', 'Cormorant Garamond', Didot, Georgia, serif;
+  }
+
+  /* Custom Hairline Borders */
+  .border-hairline {
+    border-color: #E8E3DC;
+  }
+
+  /* Image Isolation Studio Plinths */
+  .studio-plinth {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E3DC;
+  }
+}
+
+/* Hide scrollbars while preserving natural scroll behavior */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Micro-animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

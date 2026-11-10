@@ -1,0 +1,836 @@
+export const initialProducts = [
+  // =========================================================================
+  // CATEGORY 1: BAGS & LEATHER GOODS (5 PRODUCTS)
+  // =========================================================================
+  {
+    id: "vendome-bag",
+    name: "The Vendôme Sculpted Handbag",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Leather Goods",
+    gender: "women",
+    color: "bordeaux",
+    colorName: "Deep Burgundy",
+    colorHex: "#3D0C15",
+    image: "/images/products/bags/vendome-burgundy.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Deep Burgundy",
+        hex: "#3D0C15",
+        image: "/images/products/bags/vendome-burgundy.jpg",
+        caption: "Deep Bordeaux Box Calfskin with Polished Palladium Lock"
+      },
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/bags/vendome-black.jpg",
+        caption: "Lustrous Black Box Calfskin with Architectural Hardware"
+      },
+      {
+        slug: "creme",
+        name: "Ivory Cream",
+        hex: "#F3EDE3",
+        image: "/images/products/bags/vendome-cream.jpg",
+        caption: "Chalk Tone Ivory Calfskin with Gilded Clasp"
+      }
+    ],
+    size: "medium",
+    sizeLabel: "Medium (26 cm)",
+    dimensions: { width: "26 cm", height: "19 cm", depth: "11 cm", strapDrop: "50 cm" },
+    price: 24500,
+    formattedPrice: "GH₵ 24,500",
+    ref: "Ref. 784920-HN-VD",
+    badge: "RUNWAY · LOOK 08",
+    curatedLook: "SIGNATURE COLLECTION · LOOK 08",
+    stock: 6,
+    leadTime: "Dispatched within 24 hours · White-Glove Courier in Ghana & Worldwide",
+    shortDescription: "Architectural top-handle creation in hand-glazed box calfskin with polished palladium gold lock closure and sculpted gusset silhouette.",
+    details: [
+      "100% full-grain French box calfskin exterior with hand-glazed satin patina",
+      "Supple Italian lambskin nappa lining in pale almond tone",
+      "Solid architectural brass clasp hand-cast in Accra with mirror-polished palladium finish",
+      "Detachable and adjustable calfskin shoulder strap (drop: 50 cm)",
+      "Engraved serial authentication plate (Creation No. 12 / 60)"
+    ]
+  },
+  {
+    id: "akroma-bag",
+    name: "The Akroma Sculpted Top-Handle",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Leather Goods",
+    gender: "women",
+    color: "emerald",
+    colorName: "Forest Emerald",
+    colorHex: "#124C34",
+    image: "/images/products/bags/akroma-forest-green.jpg",
+    availableColors: [
+      {
+        slug: "emerald",
+        name: "Forest Emerald",
+        hex: "#124C34",
+        image: "/images/products/bags/akroma-forest-green.jpg",
+        caption: "Forest Green Calfskin with Ghanaian Lost-Wax Brass Lock"
+      }
+    ],
+    size: "medium",
+    sizeLabel: "Medium (27 cm)",
+    dimensions: { width: "27 cm", height: "20 cm", depth: "10 cm", strapDrop: "52 cm" },
+    price: 26800,
+    formattedPrice: "GH₵ 26,800",
+    ref: "Ref. 784925-HN-AK",
+    badge: "RUNWAY · LOOK 14",
+    stock: 4,
+    shortDescription: "Sculptural structured handbag in deep forest green box calfskin featuring a bespoke Ghanaian lost-wax brass crest lock.",
+    details: [
+      "Full-grain French river tannery calfskin in saturated forest emerald",
+      "Signature Ghanaian lost-wax cast brass interlocking latch",
+      "Tonal hand-waxed saddle stitching with beeswax burnished edges",
+      "Interior dual partition with zippered slip pocket"
+    ]
+  },
+  {
+    id: "volta-crossbody",
+    name: "The Volta Ergonomic Crossbody",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Leather Goods",
+    gender: "unisex",
+    color: "camel",
+    colorName: "Saddle Tan",
+    colorHex: "#8C582B",
+    image: "/images/products/bags/volta-saddle-tan.jpg",
+    availableColors: [
+      {
+        slug: "camel",
+        name: "Saddle Tan",
+        hex: "#8C582B",
+        image: "/images/products/bags/volta-saddle-tan.jpg",
+        caption: "Saddle Tan Hand-Burnished Calfskin with Antique Brass Hardware"
+      }
+    ],
+    size: "petite",
+    sizeLabel: "Petite (22 cm)",
+    dimensions: { width: "22 cm", height: "16 cm", depth: "7 cm", strapDrop: "55 cm" },
+    price: 18500,
+    formattedPrice: "GH₵ 18,500",
+    ref: "Ref. 784931-HN-VT",
+    badge: "NEW ARRIVAL",
+    stock: 8,
+    shortDescription: "Ergonomic curved saddle crossbody bag in hand-patinated tan leather with dual magnetic closures and wide artisan strap.",
+    details: [
+      "Hand-burnished Tuscan saddle leather with natural drum-dye finish",
+      "Solid antique brass buckle adjustments",
+      "Curved contoured silhouette designed for seamless drape against hip",
+      "Reinforced base with discreet protective studs"
+    ]
+  },
+  {
+    id: "kumasi-clutch",
+    name: "The Kumasi Gilded Bar Evening Clutch",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Evening Clutches",
+    gender: "women",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/bags/kumasi-evening-clutch.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/bags/kumasi-evening-clutch.jpg",
+        caption: "Black Box Calfskin with Hand-Chiseled Brass Bar"
+      }
+    ],
+    size: "petite",
+    sizeLabel: "Petite (24 cm)",
+    dimensions: { width: "24 cm", height: "13 cm", depth: "5 cm", strapDrop: "Handheld" },
+    price: 16200,
+    formattedPrice: "GH₵ 16,200",
+    ref: "Ref. 784940-HN-KC",
+    badge: "ATELIER SALON EXCLUSIVE",
+    stock: 5,
+    shortDescription: "Sculptural evening clutch in lustrous black calfskin with an architectural top bar hand-cast in Accra.",
+    details: [
+      "Lustrous French box calf exterior with glove-leather lamb interior",
+      "Hand-chiseled lost-wax solid brass architectural grip bar",
+      "Concealed magnetic frame closure with satisfying vault click",
+      "Detachable braided palladium chain strap for optional shoulder carry"
+    ]
+  },
+  {
+    id: "ashanti-bucket",
+    name: "The Ashanti Column Bucket Bag",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Leather Goods",
+    gender: "women",
+    color: "creme",
+    colorName: "Ivory Cream",
+    colorHex: "#F3EDE3",
+    image: "/images/products/bags/ashanti-bucket-bag.jpg",
+    availableColors: [
+      {
+        slug: "creme",
+        name: "Ivory Cream",
+        hex: "#F3EDE3",
+        image: "/images/products/bags/ashanti-bucket-bag.jpg",
+        caption: "Ivory Box Calfskin with Braided Top Handle"
+      }
+    ],
+    size: "medium",
+    sizeLabel: "Medium (23 cm)",
+    dimensions: { width: "20 cm", height: "23 cm", depth: "20 cm", strapDrop: "48 cm" },
+    price: 21900,
+    formattedPrice: "GH₵ 21,900",
+    ref: "Ref. 784948-HN-AB",
+    badge: "RUNWAY · LOOK 03",
+    stock: 5,
+    shortDescription: "Architectural cylindrical bucket bag in chalk ivory box leather with hand-braided leather top handle and gilded eyelets.",
+    details: [
+      "Rigid cylindrical silhouette crafted over sculptural wooden forms",
+      "Linen canvas drawstring pouch insert with leather toggle cords",
+      "Chiseled brass ring loops with mirror gold electroplating",
+      "Reinforced circular base stamped with the Habrenoir atelier crest"
+    ]
+  },
+  {
+    id: "ohemaa-duffle",
+    name: "The Ohemaa Sovereign Travel Duffle",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Travel & Luggage",
+    gender: "unisex",
+    color: "camel",
+    colorName: "Dark Espresso",
+    colorHex: "#281800",
+    image: "/images/products/bags/adinkra-weekend-duffle.jpg",
+    availableColors: [
+      {
+        slug: "camel",
+        name: "Espresso Moro",
+        hex: "#281800",
+        image: "/images/products/bags/adinkra-weekend-duffle.jpg",
+        caption: "Rich Espresso Grained Calfskin with Solid Brass Hardware"
+      }
+    ],
+    size: "grande",
+    sizeLabel: "Grande (50 cm)",
+    dimensions: { width: "50 cm", height: "30 cm", depth: "25 cm", strapDrop: "55 cm" },
+    price: 38500,
+    formattedPrice: "GH₵ 38,500",
+    ref: "Ref. 784955-HN-OD",
+    badge: "VOYAGE COLLECTION",
+    stock: 3,
+    shortDescription: "Ultra-luxurious weekender travel duffle in pebble-grained espresso calfskin with reinforced corners and padlock clochette.",
+    details: [
+      "Heavyweight full-grain French bull calf leather with water-repellent wax finish",
+      "Double-ended palladium two-way zip with solid brass locking padlock",
+      "Ergonomic rolled leather handles tested to 50 kg load capacity",
+      "Base protected by 6 solid lost-wax cast brass feet"
+    ]
+  },
+
+  // =========================================================================
+  // CATEGORY 2: FOOTWEAR & SHOES (5 PRODUCTS)
+  // =========================================================================
+  {
+    id: "horsebit-loafer",
+    name: "The Horsebit Atelier Loafers",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    subcategory: "Footwear & Shoes",
+    gender: "men",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/shoes/horsebit-black.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/shoes/horsebit-black.jpg",
+        caption: "Polished Italian Box Calfskin with Gleaming Gold Horsebit Bar"
+      },
+      {
+        slug: "bordeaux",
+        name: "Bordeaux Cordovan",
+        hex: "#4A0E18",
+        image: "/images/products/shoes/horsebit-burgundy.jpg",
+        caption: "Deep Oxblood Burnished Leather with Polished Gold Hardware"
+      },
+      {
+        slug: "camel",
+        name: "Tobacco Suede",
+        hex: "#8C582B",
+        image: "/images/products/shoes/horsebit-tobacco.jpg",
+        caption: "Velvety Tuscan Suede with Burnished Brass Hardware"
+      }
+    ],
+    size: "42",
+    sizeLabel: "EU 42 (US 9 / UK 8)",
+    dimensions: { width: "Standard D", height: "Low-profile", depth: "Blake Sole" },
+    price: 12500,
+    formattedPrice: "GH₵ 12,500",
+    ref: "Ref. 830114-HN-LF",
+    badge: "RUNWAY · ICON",
+    stock: 9,
+    shortDescription: "Classic Italian silhouette featuring our signature hand-cast Ghanaian brass horsebit bar, Blake-rapid welt construction.",
+    details: [
+      "100% full-grain French box calfskin with mirror-shine toe burnishing",
+      "Iconic solid brass horsebit bar cast in Accra using ancient lost-wax technique",
+      "Blake-stitched oak bark tanned leather soles with carved fiddleback waist",
+      "Ultra-supple interior glove-leather lining"
+    ]
+  },
+  {
+    id: "florentine-monkstrap",
+    name: "The Osu Double-Buckle Monkstrap",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    subcategory: "Footwear & Shoes",
+    gender: "men",
+    color: "bordeaux",
+    colorName: "Bordeaux Glacé",
+    colorHex: "#3D0C15",
+    image: "/images/products/shoes/florentine-monkstrap.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Bordeaux Glacé",
+        hex: "#3D0C15",
+        image: "/images/products/shoes/florentine-monkstrap.jpg",
+        caption: "Glacé Oxblood Calfskin with Solid Lost-Wax Buckles"
+      }
+    ],
+    size: "42",
+    sizeLabel: "EU 42 (UK 8)",
+    dimensions: { width: "Standard D", height: "Stacked Heel", depth: "Goodyear Sole" },
+    price: 14800,
+    formattedPrice: "GH₵ 14,800",
+    ref: "Ref. 830122-HN-MS",
+    badge: "SARTORIAL ICON",
+    stock: 6,
+    shortDescription: "Double monkstrap dress shoe in deep burgundy glazed calfskin with hand-chiseled lost-wax brass buckles and Goodyear welt.",
+    details: [
+      "Grade-1 French box calf hand-rubbed with 5 shades of cream for depth",
+      "Dual solid brass buckles cast in Accra and micro-beveled",
+      "Goodyear welted leather sole with recessed brass toe taps",
+      "Stacked Cuban dress heel with gentle pitched slope"
+    ]
+  },
+  {
+    id: "savile-chelsea",
+    name: "The Accra Chelsea Ankle Boots",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    subcategory: "Footwear & Shoes",
+    gender: "men",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/shoes/savile-chelsea-boot.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/shoes/savile-chelsea-boot.jpg",
+        caption: "Polished Black Box Calfskin with Gilded Brass Heel Pull"
+      }
+    ],
+    size: "42",
+    sizeLabel: "EU 42 (UK 8)",
+    dimensions: { width: "Standard D", height: "16 cm Shaft", depth: "Blake Rapid" },
+    price: 16500,
+    formattedPrice: "GH₵ 16,500",
+    ref: "Ref. 830130-HN-CB",
+    badge: "NEW ARRIVAL",
+    stock: 7,
+    shortDescription: "Clean-lined Chelsea ankle boot cut from a single wholecut hide of black calfskin with brass rear loop and sculpted waist.",
+    details: [
+      "Single continuous wholecut calfskin pattern with minimal exterior seams",
+      "Heavy-gauge woven tonal elastic side gussets for snug ankle contour",
+      "Solid lost-wax cast brass Habrenoir heel pull ring",
+      "Triple oak bark tanned leather outsole with channel-grooved stitching"
+    ]
+  },
+  {
+    id: "labadi-slipper",
+    name: "The Labadi Embroidered Velvet Slippers",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    subcategory: "Evening Footwear",
+    gender: "men",
+    color: "noir",
+    colorName: "Midnight Velvet",
+    colorHex: "#0D0D11",
+    image: "/images/products/shoes/venetian-evening-slipper.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Midnight Velvet",
+        hex: "#0D0D11",
+        image: "/images/products/shoes/venetian-evening-slipper.jpg",
+        caption: "Midnight Black Silk Velvet with Hand-Embroidered Gold Crest"
+      }
+    ],
+    size: "42",
+    sizeLabel: "EU 42 (UK 8)",
+    dimensions: { width: "Standard D", height: "Slip-on", depth: "Turned Sole" },
+    price: 11800,
+    formattedPrice: "GH₵ 11,800",
+    ref: "Ref. 830142-HN-LS",
+    badge: "EVENING EXCLUSIVE",
+    stock: 5,
+    shortDescription: "Opulent evening slipper in Italian silk velvet embroidered with Habrenoir’s Akan crest in metallic bullion gold thread.",
+    details: [
+      "100% royal silk velvet upper with deep midnight luster",
+      "Hand-embroidered coat of arms using gilded French bullion wire",
+      "Quilted champagne satin interior lining and cushioned insole",
+      "Hand-turned thin leather dress sole with rubber heel insert"
+    ]
+  },
+  {
+    id: "senchi-mules",
+    name: "The Senchi Sculptural Mule Heels",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    subcategory: "Footwear & Shoes",
+    gender: "women",
+    color: "creme",
+    colorName: "Ivory Cream",
+    colorHex: "#F3EDE3",
+    image: "/images/products/shoes/cannes-mule-heels.jpg",
+    availableColors: [
+      {
+        slug: "creme",
+        name: "Ivory Cream",
+        hex: "#F3EDE3",
+        image: "/images/products/shoes/cannes-mule-heels.jpg",
+        caption: "Crème Ivory Nappa with Solid Sculpted Brass Architectural Heel"
+      }
+    ],
+    size: "39",
+    sizeLabel: "EU 39 (UK 6 / US 8.5)",
+    dimensions: { width: "Standard B", height: "8.5 cm Heel", depth: "Sculpted Metal" },
+    price: 15400,
+    formattedPrice: "GH₵ 15,400",
+    ref: "Ref. 830155-HN-SM",
+    badge: "RUNWAY · LOOK 02",
+    stock: 5,
+    shortDescription: "Statement mule heel in butter-soft ivory nappa leather crowned with a sculptural 8.5 cm lost-wax brass heel column.",
+    details: [
+      "Ultra-soft French nappa lambskin upper with folded piped edges",
+      "Custom lost-wax molten brass sculpted heel hand-polished to mirror luster",
+      "Padded anatomic footbed for sustained evening comfort",
+      "Hand-buffed natural leather sole with discreet Habrenoir monogram stamp"
+    ]
+  },
+
+  // =========================================================================
+  // CATEGORY 3: READY-TO-WEAR SILK SHIRTS (4 PRODUCTS)
+  // =========================================================================
+  {
+    id: "palazzo-silk-shirt",
+    name: "The Palazzo Silk Bowling Shirt",
+    category: "shirts",
+    categoryName: "Ready-to-Wear Shirts",
+    subcategory: "Fine Silk",
+    gender: "unisex",
+    color: "creme",
+    colorName: "Ivory Flora Jacquard",
+    colorHex: "#F3EDE3",
+    image: "/images/products/shirts/bowling-ivory.jpg",
+    availableColors: [
+      {
+        slug: "creme",
+        name: "Ivory Flora Jacquard",
+        hex: "#F3EDE3",
+        image: "/images/products/shirts/bowling-ivory.jpg",
+        caption: "Como Mulberry Silk Crepe with Tone-on-Tone Jacquard Flora"
+      },
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/shirts/bowling-black.jpg",
+        caption: "Midnight Black Mulberry Silk with Gilded Mother-of-Pearl Buttons"
+      },
+      {
+        slug: "emerald",
+        name: "Sovereign Emerald",
+        hex: "#124C34",
+        image: "/images/products/shirts/bowling-emerald.jpg",
+        caption: "Rich Emerald Silk Crepe with Botanical Palm Jacquard"
+      }
+    ],
+    size: "M",
+    sizeLabel: "Medium (Chest: 40\")",
+    dimensions: { width: "Relaxed Fit", height: "72 cm Length", depth: "Camp Collar" },
+    price: 8900,
+    formattedPrice: "GH₵ 8,900",
+    ref: "Ref. 510928-HN-PS",
+    badge: "RUNWAY · LOOK 11",
+    stock: 12,
+    shortDescription: "Camp-collar bowling shirt cut from Como mulberry silk crepe featuring tonal botanical jacquards and genuine mother-of-pearl buttons.",
+    details: [
+      "100% 19-momme mulberry silk crepe woven in Lake Como, Italy",
+      "Camp collar with Cuban rever lapel styling",
+      "Authentic Australian mother-of-pearl buttons with cross-stitching",
+      "Single chest patch pocket with clean single-needle tailoring"
+    ]
+  },
+  {
+    id: "kente-silk-shirt",
+    name: "The Volta Silk Jacquard Bowling Shirt",
+    category: "shirts",
+    categoryName: "Ready-to-Wear Shirts",
+    subcategory: "Fine Silk",
+    gender: "men",
+    color: "emerald",
+    colorName: "Forest & Gold Jacquard",
+    colorHex: "#124C34",
+    image: "/images/products/shirts/kente-jacquard-silk-shirt.jpg",
+    availableColors: [
+      {
+        slug: "emerald",
+        name: "Forest & Gold Jacquard",
+        hex: "#124C34",
+        image: "/images/products/shirts/kente-jacquard-silk-shirt.jpg",
+        caption: "Deep Forest Silk with Tonal Geometric Jacquard Weave"
+      }
+    ],
+    size: "M",
+    sizeLabel: "Medium (Chest: 40\")",
+    dimensions: { width: "Relaxed Fit", height: "73 cm Length", depth: "Cuban Collar" },
+    price: 9500,
+    formattedPrice: "GH₵ 9,500",
+    ref: "Ref. 510935-HN-VS",
+    badge: "RUNWAY · LOOK 06",
+    stock: 8,
+    shortDescription: "Deep forest green silk bowling shirt featuring subtle geometric Akan weaving motifs translated into high-definition Italian silk jacquard.",
+    details: [
+      "Pure mulberry silk jacquard with subtle metallic gold filament accents",
+      "Straight boxy cut engineered for warm-climate evening fluidity",
+      "Concealed button placket with top exposed brass loop toggle",
+      "Side hem vents for effortless untucked drape"
+    ]
+  },
+  {
+    id: "monogram-silk-shirt",
+    name: "The Habrenoir Monogram Camp-Collar Shirt",
+    category: "shirts",
+    categoryName: "Ready-to-Wear Shirts",
+    subcategory: "Fine Silk",
+    gender: "unisex",
+    color: "bordeaux",
+    colorName: "Deep Burgundy",
+    colorHex: "#3D0C15",
+    image: "/images/products/shirts/monogram-cuban-shirt.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Deep Burgundy",
+        hex: "#3D0C15",
+        image: "/images/products/shirts/monogram-cuban-shirt.jpg",
+        caption: "Bordeaux Silk Twill with Interlocking Monogram Jacquard"
+      }
+    ],
+    size: "M",
+    sizeLabel: "Medium (Chest: 40\")",
+    dimensions: { width: "Relaxed Fit", height: "71 cm Length", depth: "Camp Collar" },
+    price: 9200,
+    formattedPrice: "GH₵ 9,200",
+    ref: "Ref. 510942-HN-MS",
+    badge: "HERITAGE MONOGRAM",
+    stock: 9,
+    shortDescription: "Signature camp-collar shirt in Bordeaux red silk twill displaying the interlocking Habrenoir crest in understated micro-jacquard.",
+    details: [
+      "100% heavy silk twill offering exceptional drape and wrinkle resistance",
+      "Tonal monogram repeat visible upon movement under ambient gallery lighting",
+      "Smoked horn buttons with engraved atelier seal",
+      "Hand-finished French seams throughout"
+    ]
+  },
+  {
+    id: "sahel-linen-overshirt",
+    name: "The Sahel Raw Linen Safari Overshirt",
+    category: "shirts",
+    categoryName: "Ready-to-Wear Shirts",
+    subcategory: "Linen & Safari",
+    gender: "men",
+    color: "creme",
+    colorName: "Bleached Ivory",
+    colorHex: "#F3EDE3",
+    image: "/images/products/shirts/linen-safari-overshirt.jpg",
+    availableColors: [
+      {
+        slug: "creme",
+        name: "Bleached Ivory",
+        hex: "#F3EDE3",
+        image: "/images/products/shirts/linen-safari-overshirt.jpg",
+        caption: "Raw Heavyweight Normandy Linen in Bleached Ivory"
+      }
+    ],
+    size: "M",
+    sizeLabel: "Medium (Chest: 41\")",
+    dimensions: { width: "Structured Drape", height: "75 cm Length", depth: "Utility Pockets" },
+    price: 7800,
+    formattedPrice: "GH₵ 7,800",
+    ref: "Ref. 510950-HN-SL",
+    badge: "RESORT COLLECTION",
+    stock: 10,
+    shortDescription: "Utilitarian luxury safari overshirt in textured Normandy raw linen featuring four tailored bellows flap pockets.",
+    details: [
+      "Heavyweight 320gsm organic flax linen sourced from Normandy",
+      "Four sculpted bellows cargo pockets with box pleats",
+      "Natural unbleached horn buttons hand-turned in Florence",
+      "Double-stitched stress yokes and reinforced elbow patches"
+    ]
+  },
+
+  // =========================================================================
+  // CATEGORY 4: TAILORING & BLAZERS (3 PRODUCTS)
+  // =========================================================================
+  {
+    id: "atelier-blazer",
+    name: "The Double-Breasted Atelier Blazer",
+    category: "blazers",
+    categoryName: "Tailoring & Outerwear",
+    subcategory: "Tailored Blazers",
+    gender: "men",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/blazers/atelier-black.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/blazers/atelier-black.jpg",
+        caption: "Double-Breasted Super 130s Wool Twill in Deep Black"
+      },
+      {
+        slug: "bordeaux",
+        name: "Deep Burgundy",
+        hex: "#3D0C15",
+        image: "/images/products/blazers/atelier-burgundy.jpg",
+        caption: "Opulent Deep Bordeaux Velvet Dinner Jacket"
+      },
+      {
+        slug: "creme",
+        name: "Ivory Cream",
+        hex: "#F3EDE3",
+        image: "/images/products/blazers/atelier-cream.jpg",
+        caption: "Summer Silk & Linen Twill in Soft Ivory"
+      }
+    ],
+    size: "48",
+    sizeLabel: "IT 48 (Chest: 38\")",
+    dimensions: { width: "Structured Shoulder", height: "76 cm", depth: "Full Canvas" },
+    price: 19800,
+    formattedPrice: "GH₵ 19,800",
+    ref: "Ref. 620401-HN-AB",
+    badge: "RUNWAY · LOOK 01",
+    stock: 5,
+    shortDescription: "Structured 6-on-2 double-breasted jacket with wide peak lapels, floating horsehair canvas chest piece, and embossed crest buttons.",
+    details: [
+      "Super 130s high-twist virgin wool twill from historic Biella mills",
+      "Full floating horsehair canvas chest construction for immaculate drape",
+      "Hand-cast lost-wax Ghanaian brass crest buttons",
+      "Cupro jacquard full interior lining with cigar and passport pockets"
+    ]
+  },
+  {
+    id: "bordeaux-dinner-jacket",
+    name: "The Nocturne Velvet Dinner Jacket",
+    category: "blazers",
+    categoryName: "Tailoring & Outerwear",
+    subcategory: "Evening Formalwear",
+    gender: "men",
+    color: "bordeaux",
+    colorName: "Deep Burgundy",
+    colorHex: "#3D0C15",
+    image: "/images/products/blazers/atelier-burgundy.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Deep Burgundy",
+        hex: "#3D0C15",
+        image: "/images/products/blazers/atelier-burgundy.jpg",
+        caption: "Italian Silk Velvet with Grosgrain Peak Lapels"
+      }
+    ],
+    size: "48",
+    sizeLabel: "IT 48 (Chest: 38\")",
+    dimensions: { width: "Structured Fit", height: "75 cm", depth: "Peak Lapels" },
+    price: 22500,
+    formattedPrice: "GH₵ 22,500",
+    ref: "Ref. 620415-HN-NJ",
+    badge: "EVENING BLACK TIE",
+    stock: 4,
+    shortDescription: "Sumptuous single-breasted evening tuxedo jacket in wine-red Italian silk velvet accented with silk grosgrain peak lapels.",
+    details: [
+      "Plush 100% cotton-silk velvet with luminous hand",
+      "Facing peak lapels in archival silk faille grosgrain",
+      "Single button closure with velvet covered button",
+      "Jetted evening pockets without flaps for purest minimalist silhouette"
+    ]
+  },
+  {
+    id: "riviera-summer-blazer",
+    name: "The Riviera Linen-Silk Summer Jacket",
+    category: "blazers",
+    categoryName: "Tailoring & Outerwear",
+    subcategory: "Tailored Blazers",
+    gender: "men",
+    color: "creme",
+    colorName: "Ivory Cream",
+    colorHex: "#F3EDE3",
+    image: "/images/products/blazers/atelier-cream.jpg",
+    availableColors: [
+      {
+        slug: "creme",
+        name: "Ivory Cream",
+        hex: "#F3EDE3",
+        image: "/images/products/blazers/atelier-cream.jpg",
+        caption: "Natural Flax & Silk Twill in Ivory Cream"
+      }
+    ],
+    size: "48",
+    sizeLabel: "IT 48 (Chest: 38\")",
+    dimensions: { width: "Shirt Shoulder", height: "74 cm", depth: "Unlined" },
+    price: 18200,
+    formattedPrice: "GH₵ 18,200",
+    ref: "Ref. 620422-HN-RJ",
+    badge: "RESORT COLLECTION",
+    stock: 6,
+    shortDescription: "Unstructured summer blazer with soft shirt shoulders tailored from breathable flax linen and raw silk.",
+    details: [
+      "Blend of 60% flax linen and 40% tussah raw silk",
+      "Completely unlined body with bound interior seams for breathability",
+      "Double back vents and curved chest pocket",
+      "Hand-sewn horn buttons with cross-stitch shank"
+    ]
+  },
+
+  // =========================================================================
+  // CATEGORY 5: BELTS & ACCESSORIES (3 PRODUCTS)
+  // =========================================================================
+  {
+    id: "signet-belt",
+    name: "The Signet Monogram Belt",
+    category: "accessories",
+    categoryName: "Belts & Accessories",
+    subcategory: "Small Leather Goods",
+    gender: "unisex",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/belts/signet-black.jpg",
+    availableColors: [
+      {
+        slug: "noir",
+        name: "Classic Black",
+        hex: "#140002",
+        image: "/images/products/belts/signet-black.jpg",
+        caption: "Polished Black Box Calfskin with Gilded Brass Monogram Buckle"
+      }
+    ],
+    size: "90",
+    sizeLabel: "90 cm (Waist: 32\"–34\")",
+    dimensions: { width: "3.5 cm width", height: "90 cm length", depth: "Solid Buckle" },
+    price: 4200,
+    formattedPrice: "GH₵ 4,200",
+    ref: "Ref. 910245-HN-SB",
+    badge: "HERITAGE HARDWARE",
+    stock: 14,
+    shortDescription: "Hand-beveled box calfskin belt strap finished with our architectural interlocking Ghanaian brass monogram buckle.",
+    details: [
+      "Full-grain French box calfskin strap with vegetable tanned core",
+      "Solid virgin brass monogram buckle hand-cast in Accra",
+      "Edge paint hand-sealed with 5 layers of matte lacquer",
+      "Reversible strap mechanism with subtle screw assembly"
+    ]
+  },
+  {
+    id: "akan-sun-belt",
+    name: "The Akan Sun-Disk Dress Belt",
+    category: "accessories",
+    categoryName: "Belts & Accessories",
+    subcategory: "Small Leather Goods",
+    gender: "unisex",
+    color: "bordeaux",
+    colorName: "Deep Burgundy",
+    colorHex: "#3D0C15",
+    image: "/images/products/belts/signet-black.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Deep Burgundy",
+        hex: "#3D0C15",
+        image: "/images/products/belts/signet-black.jpg",
+        caption: "Glacé Oxblood Calfskin with Circular Lost-Wax Brass Sun Buckle"
+      }
+    ],
+    size: "90",
+    sizeLabel: "90 cm (Waist: 32\"–34\")",
+    dimensions: { width: "3.0 cm width", height: "90 cm length", depth: "Cast Disk" },
+    price: 4600,
+    formattedPrice: "GH₵ 4,600",
+    ref: "Ref. 910252-HN-AB",
+    badge: "ATELIER EDITION",
+    stock: 11,
+    shortDescription: "Dress belt in deep bordeaux calfskin featuring an iconic circular Akan sun-disk buckle hand-chiseled to micrometer tolerances.",
+    details: [
+      "Grade-1 French calfskin strap burnished with organic beeswax",
+      "Circular sun-disk buckle inspired by 18th-century royal regalia",
+      "Polished champagne gold finish with anti-tarnish micro-coating",
+      "Includes flannel travel pouch and luxury presentation box"
+    ]
+  },
+  {
+    id: "monogram-foulard",
+    name: "The Grand Pavilion Silk Twill Square",
+    category: "accessories",
+    categoryName: "Belts & Accessories",
+    subcategory: "Fine Silk",
+    gender: "unisex",
+    color: "bordeaux",
+    colorName: "Burgundy & Cream",
+    colorHex: "#3D0C15",
+    image: "/images/products/shirts/monogram-cuban-shirt.jpg",
+    availableColors: [
+      {
+        slug: "bordeaux",
+        name: "Burgundy & Cream",
+        hex: "#3D0C15",
+        image: "/images/products/shirts/monogram-cuban-shirt.jpg",
+        caption: "90cm Silk Twill Square Scarf with Hand-Rolled Edges"
+      }
+    ],
+    size: "90",
+    sizeLabel: "90 × 90 cm Square",
+    dimensions: { width: "90 cm", height: "90 cm", depth: "Hand-Rolled" },
+    price: 3600,
+    formattedPrice: "GH₵ 3,600",
+    ref: "Ref. 910260-HN-FC",
+    badge: "COMO SILK",
+    stock: 15,
+    shortDescription: "Large 90cm square scarf in heavy silk twill, illustrated with an intricate architectural drawing of the Accra and European ateliers.",
+    details: [
+      "100% Como silk twill with crisp matte luster and fluid drape",
+      "Hand-rolled and hand-stitched edges executed by master seamstresses",
+      "Screen-printed with 14 individual color screens",
+      "Packaged in signature bordeaux square presentation box with ribbon"
+    ]
+  }
+];

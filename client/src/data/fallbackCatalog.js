@@ -1,0 +1,145 @@
+// Client-side local fallback catalog for resilient offline viewing
+export const fallbackProducts = [
+  {
+    id: "vendome-bag",
+    name: "The Vendôme Sculpted Handbag",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    subcategory: "Leather Goods",
+    gender: "women",
+    color: "bordeaux",
+    colorName: "Deep Burgundy",
+    colorHex: "#3D0C15",
+    image: "/images/products/bags/vendome-burgundy.jpg",
+    availableColors: [
+      { slug: "bordeaux", name: "Deep Burgundy", hex: "#3D0C15", image: "/images/products/bags/vendome-burgundy.jpg", caption: "Deep Burgundy Box Calfskin" },
+      { slug: "noir", name: "Classic Black", hex: "#140002", image: "/images/products/bags/vendome-black.jpg", caption: "Lustrous Black Box Calfskin" },
+      { slug: "creme", name: "Ivory Cream", hex: "#F3EDE3", image: "/images/products/bags/vendome-cream.jpg", caption: "Chalk Tone Ivory Calfskin" }
+    ],
+    size: "medium",
+    sizeLabel: "Medium (26 cm)",
+    dimensions: { width: "26 cm", height: "19 cm", depth: "11 cm", strapDrop: "50 cm" },
+    price: 24500,
+    formattedPrice: "GH₵ 24,500",
+    ref: "Ref. 784920-HN-VD",
+    badge: "SIGNATURE",
+    stock: 6,
+    shortDescription: "Architectural top-handle creation in hand-glazed box calfskin with polished palladium gold lock closure."
+  },
+  {
+    id: "akroma-bag",
+    name: "The Akroma Sculpted Top-Handle",
+    category: "bags",
+    categoryName: "Bags & Leather Goods",
+    gender: "women",
+    color: "emerald",
+    colorName: "Forest Emerald",
+    colorHex: "#124C34",
+    image: "/images/products/bags/akroma-forest-green.jpg",
+    availableColors: [
+      { slug: "emerald", name: "Forest Emerald", hex: "#124C34", image: "/images/products/bags/akroma-forest-green.jpg", caption: "Forest Green Calfskin" }
+    ],
+    size: "medium",
+    sizeLabel: "Medium (27 cm)",
+    price: 26800,
+    formattedPrice: "GH₵ 26,800",
+    ref: "Ref. 784925-HN-AK",
+    badge: "BESTSELLER",
+    stock: 4,
+    shortDescription: "Structured structured handbag in forest green calfskin with Ghanaian lost-wax brass lock."
+  },
+  {
+    id: "horsebit-loafer",
+    name: "The Horsebit Atelier Loafers",
+    category: "shoes",
+    categoryName: "Footwear & Shoes",
+    gender: "men",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/shoes/horsebit-black.jpg",
+    availableColors: [
+      { slug: "noir", name: "Classic Black", hex: "#140002", image: "/images/products/shoes/horsebit-black.jpg", caption: "Full-Grain Box Calfskin" },
+      { slug: "bordeaux", name: "Burgundy Cordovan", hex: "#4A0E18", image: "/images/products/shoes/horsebit-burgundy.jpg", caption: "Burnished Oxblood" },
+      { slug: "camel", name: "Tobacco Suede", hex: "#8C582B", image: "/images/products/shoes/horsebit-tobacco.jpg", caption: "Velvety Suede" }
+    ],
+    size: "42",
+    sizeLabel: "EU 42 (UK 8)",
+    price: 12500,
+    formattedPrice: "GH₵ 12,500",
+    ref: "Ref. 830114-HN-LF",
+    badge: "ACCRA BRASS",
+    stock: 9,
+    shortDescription: "Classic dress silhouette featuring solid brass horsebit bar cast in Accra."
+  },
+  {
+    id: "palazzo-silk-shirt",
+    name: "The Palazzo Silk Bowling Shirt",
+    category: "shirts",
+    categoryName: "Ready-to-Wear Shirts",
+    gender: "unisex",
+    color: "creme",
+    colorName: "Ivory Flora Jacquard",
+    colorHex: "#F3EDE3",
+    image: "/images/products/shirts/bowling-ivory.jpg",
+    availableColors: [
+      { slug: "creme", name: "Ivory Flora Jacquard", hex: "#F3EDE3", image: "/images/products/shirts/bowling-ivory.jpg", caption: "Como Mulberry Silk" },
+      { slug: "noir", name: "Classic Black", hex: "#140002", image: "/images/products/shirts/bowling-black.jpg", caption: "Midnight Mulberry Silk" },
+      { slug: "emerald", name: "Sovereign Emerald", hex: "#124C34", image: "/images/products/shirts/bowling-emerald.jpg", caption: "Emerald Botanical Jacquard" }
+    ],
+    size: "M",
+    sizeLabel: "Medium",
+    price: 8900,
+    formattedPrice: "GH₵ 8,900",
+    ref: "Ref. 510928-HN-PS",
+    badge: "NEW ARRIVAL",
+    stock: 12,
+    shortDescription: "Camp-collar bowling shirt cut from Como mulberry silk crepe."
+  },
+  {
+    id: "atelier-blazer",
+    name: "The Double-Breasted Atelier Blazer",
+    category: "blazers",
+    categoryName: "Tailoring & Outerwear",
+    gender: "men",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/blazers/atelier-black.jpg",
+    availableColors: [
+      { slug: "noir", name: "Classic Black", hex: "#140002", image: "/images/products/blazers/atelier-black.jpg", caption: "Super 130s Wool Twill" },
+      { slug: "bordeaux", name: "Deep Burgundy", hex: "#3D0C15", image: "/images/products/blazers/atelier-burgundy.jpg", caption: "Burgundy Velvet" },
+      { slug: "creme", name: "Ivory Cream", hex: "#F3EDE3", image: "/images/products/blazers/atelier-cream.jpg", caption: "Summer Silk Flax" }
+    ],
+    size: "48",
+    sizeLabel: "IT 48",
+    price: 19800,
+    formattedPrice: "GH₵ 19,800",
+    ref: "Ref. 620401-HN-AB",
+    badge: "LIMITED EDITION",
+    stock: 5,
+    shortDescription: "Structured 6-on-2 double-breasted jacket with wide peak lapels."
+  },
+  {
+    id: "signet-belt",
+    name: "The Signet Monogram Belt",
+    category: "accessories",
+    categoryName: "Belts & Accessories",
+    gender: "unisex",
+    color: "noir",
+    colorName: "Classic Black",
+    colorHex: "#140002",
+    image: "/images/products/belts/signet-black.jpg",
+    availableColors: [
+      { slug: "noir", name: "Classic Black", hex: "#140002", image: "/images/products/belts/signet-black.jpg", caption: "Black Box Calfskin" }
+    ],
+    size: "90",
+    sizeLabel: "90 cm",
+    price: 4200,
+    formattedPrice: "GH₵ 4,200",
+    ref: "Ref. 910245-HN-SB",
+    badge: "HERITAGE HARDWARE",
+    stock: 14,
+    shortDescription: "Hand-beveled box calfskin belt strap finished with solid lost-wax brass buckle."
+  }
+];
