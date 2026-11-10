@@ -280,12 +280,6 @@ export const WhatsAppButton = () => {
               : 'cursor-grab hover:scale-105 hover:border-[#C5A880]'
           }`}
         >
-          {/* Pulsating Emerald Live Activity Pip (Top-Right) */}
-          <span className="absolute top-1 right-1 flex h-2.5 w-2.5">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#25D366]"></span>
-          </span>
-
           {/* Champagne Gold WhatsApp Vector Icon */}
           <svg
             className={`w-5 h-5 text-[#C5A880] group-hover:text-[#FFFFFF] transition-colors ${
